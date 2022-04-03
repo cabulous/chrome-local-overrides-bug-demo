@@ -6,6 +6,17 @@
 </head>
 <body>
 
+<h2>To reproduce the issue:</h2>
+<ol>
+    <li>Go to DevTools → Sources → Enable Local Overrides</li>
+    <li>Go to Network</li>
+    <li>Find the script named "with-query.js?v=1"</li>
+    <li>Right-click the script and select "Save for Overrides"</li>
+    <li>Edit the script locally</li>
+    <li>The browser still loads the script remotely</li>
+</ol>
+
+
 <script src="without-query.js"></script>
 <script src="with-query.js?v=1"></script>
 </body>
